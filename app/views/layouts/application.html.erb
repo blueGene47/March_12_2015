@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to 'Doctors', doctors_path %>
+<%= link_to 'Appointments', appointments_path %>
+<%= link_to 'Prescriptions', prescriptions_path %>
+<%= link_to 'Search Appointment', search_path %>
+<%= yield %>
+
+</body>
+</html>
